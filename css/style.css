@@ -1,0 +1,141 @@
+ * {margin: 0; padding: 0;}
+
+.tree{
+    margin-left: 10px;
+    max-width: 710px;
+}
+
+.tree a{
+    position: relative;
+    margin-bottom: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+    display: inline-block;
+    min-height: 35px;
+    transition: .5s;
+}
+
+.tree a.male{
+    background: #bad1f1;
+}
+
+.tree a.male:hover{
+    transition: .5s;
+    box-shadow: -2px -2px 4px #7ca5de, 2px 2px 4px #7ca5de, -2px 2px 4px #7ca5de, 2px -2px 4px #7ca5de;
+}
+
+.tree a.female{
+    background: #efa1df;
+}
+
+.tree a.female:hover{
+    transition: .5s;
+    box-shadow: -2px -2px 4px #c67eb8, 2px 2px 4px #c67eb8, -2px 2px 4px #c67eb8, 2px -2px 4px #c67eb8;
+}
+
+.tree a.mainBranch{
+    display: block;
+    margin-bottom: 40px;
+    background: #ffdacb;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.tree a.mainBranch:after{
+    content: '';
+    display: block;
+    width: 350px;
+    height: 40px;
+    bottom: -40px;
+    position: absolute;
+    background: url(../img/mainBranch.png);
+}
+
+.tree .firstLine a{
+    margin-top: 40px;
+    min-width: 320px;
+    margin-right: 55px;
+}
+
+.tree .firstLine a:after{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 25px;
+    display: block;
+    width: 275px;
+    height: 40px;
+    background: url(../img/firstLine.png);
+}
+
+.tree .firstLine a:last-child{
+    margin-right: 0;
+}
+
+.tree .secondLine a{
+    min-width: 150px;
+    margin-right: 29px;
+}
+
+.tree .secondLine a:after{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 25px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    background: url(../img/secondLine.png);
+    background-repeat: no-repeat;
+}
+
+.tree .secondLine a:last-child{
+    margin-right: 0;
+}
+
+.tree .thirdLine a{
+    width: 45px;
+    padding: 10px 15px 10px 5px;
+    margin-right: 21px;
+    margin-bottom: 0;
+}
+
+.tree .thirdLine a:last-child{
+    margin-right: 0;
+}
+
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+    font-family: Georgia;
+}
+
+#boxes .window {
+    position:absolute;
+    left:0;
+    background: #fff;
+    top:0;
+    max-width:440px;
+    min-height:200px;
+    display:none;
+    z-index:9999;
+    padding:20px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 4px;
+}
+
+#boxes a {color: #333; text-decoration: none; font-size: 25px;}
+#boxes a:hover {color:#ccc; text-decoration:none}
+
+.close {
+    float: right;
+    margin-top: 148px;
+}
